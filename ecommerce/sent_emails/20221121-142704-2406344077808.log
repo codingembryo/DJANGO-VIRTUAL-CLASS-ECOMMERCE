@@ -1,0 +1,25 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: Password reset on 127.0.0.1:8000
+From: webmaster@localhost
+To: obam2780@gmail.com
+Date: Mon, 21 Nov 2022 13:27:04 -0000
+Message-ID: <166903722461.8064.5530257666370361908@ETHANIM>
+
+
+You're receiving this email because you requested a password reset for your user account at 127.0.0.1:8000.
+
+Please go to the following page and choose a new password:
+
+http://127.0.0.1:8000/accounts/reset/NA/bf8th4-807d4b6df1c930223ada070c24742a78/
+
+Your username, in case you’ve forgotten: freshman
+
+Thanks for using our site!
+
+The 127.0.0.1:8000 team
+
+
+
+-------------------------------------------------------------------------------

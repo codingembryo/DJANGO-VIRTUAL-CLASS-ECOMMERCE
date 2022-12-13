@@ -1,0 +1,275 @@
+
+(base) PS C:\Users\23470> cd desktop
+(base) PS C:\Users\23470\desktop> cddjango
+cddjango : The term 'cddjango' is
+not recognized as the name of a
+cmdlet, function, script file, or
+operable program. Check the
+spelling of the name, or if a path
+was included, verify that the path
+is correct and try again.
+At line:1 char:1
++ cddjango
++ ~~~~~~~~
+    + CategoryInfo          : Obje
+   ctNotFound: (cddjango:String)
+  [], CommandNotFoundException
+    + FullyQualifiedErrorId : Comm
+   andNotFoundException
+
+(base) PS C:\Users\23470\desktop>
+(base) PS C:\Users\23470\desktop> cd django
+(base) PS C:\Users\23470\desktop\django> pip install virtualenv
+Requirement already satisfied: virtualenv in c:\users\23470\anaconda3\lib\site-packages (20.16.5)
+Requirement already satisfied: platformdirs<3,>=2.4 in c:\users\23470\anaconda3\lib\site-packages (from virtualenv) (2.5.2)
+Requirement already satisfied: distlib<1,>=0.3.5 in c:\users\23470\anaconda3\lib\site-packages (from virtualenv) (0.3.6)
+Requirement already satisfied: filelock<4,>=3.4.1 in c:\users\23470\anaconda3\lib\site-packages (from virtualenv) (3.6.0)
+(base) PS C:\Users\23470\desktop\django> virtualenv ecommerceEnv
+created virtual environment CPython3.9.12.final.0-64 in 8679ms
+  creator CPython3Windows(dest=C:\Users\23470\Desktop\django\ecommerceEnv, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\23470\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==22.2.2, setuptools==65.4.1, wheel==0.37.1
+  activators BashActivator,BatchActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+(base) PS C:\Users\23470\desktop\django> cd ecommerceEnv
+(base) PS C:\Users\23470\desktop\django\ecommerceEnv> Scripts\activate
+(base) (ecommerceEnv) PS C:\Users\23470\desktop\django\ecommerceEnv> deactivate
+(base) PS C:\Users\23470\desktop\django\ecommerceEnv> Scripts\activate
+(base) (ecommerceEnv) PS C:\Users\23470\desktop\django\ecommerceEnv> cd ..
+(base) (ecommerceEnv) PS C:\Users\23470\desktop\django> pip install django
+Collecting django
+  Downloading Django-4.1.3-py3-none-any.whl (8.1 MB)
+     ---------------------------------------- 8.1/8.1 MB 128.7 kB/s eta 0:00:00
+Collecting tzdata
+  Downloading tzdata-2022.6-py2.py3-none-any.whl (338 kB)
+     ---------------------------------------- 338.8/338.8 kB 202.2 kB/s eta 0:00:00
+Collecting asgiref<4,>=3.5.2
+  Using cached asgiref-3.5.2-py3-none-any.whl (22 kB)
+Collecting sqlparse>=0.2.2
+  Using cached sqlparse-0.4.3-py3-none-any.whl (42 kB)
+Installing collected packages: tzdata, sqlparse, asgiref, django
+Successfully installed asgiref-3.5.2 django-4.1.3 sqlparse-0.4.3 tzdata-2022.6
+
+[notice] A new release of pip available: 22.2.2 -> 22.3
+[notice] To update, run: python.exe -m pip install --upgrade pip
+(base) (ecommerceEnv) PS C:\Users\23470\desktop\django> django-admin startproject ecommerce
+Traceback (most recent call last):
+  File "C:\Users\23470\anaconda3\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\23470\anaconda3\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\23470\desktop\django\ecommerceEnv\Scripts\django-admin.exe\__main__.py", line 7, in <module>
+  File "C:\Users\23470\Desktop\django\ecommerceEnv\lib\site-packages\django\core\management\__init__.py", line 446, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\23470\Desktop\django\ecommerceEnv\lib\site-packages\django\core\management\__init__.py", line 440, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "C:\Users\23470\Desktop\django\ecommerceEnv\lib\site-packages\django\core\management\base.py", line 402, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "C:\Users\23470\Desktop\django\ecommerceEnv\lib\site-packages\django\core\management\base.py", line 448, in execute
+    output = self.handle(*args, **options)
+  File "C:\Users\23470\Desktop\django\ecommerceEnv\lib\site-packages\django\core\management\commands\startproject.py", line 21, in handle
+    super().handle("project", project_name, target, **options)
+  File "C:\Users\23470\Desktop\django\ecommerceEnv\lib\site-packages\django\core\management\templates.py", line 225, in handle
+    run_formatters([top_dir])
+  File "C:\Users\23470\Desktop\django\ecommerceEnv\lib\site-packages\django\core\management\utils.py", line 165, in run_formatters
+    subprocess.run(
+  File "C:\Users\23470\anaconda3\lib\subprocess.py", line 505, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "C:\Users\23470\anaconda3\lib\subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\23470\anaconda3\lib\subprocess.py", line 1420, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+PermissionError: [WinError 5] Access is denied
+(base) (ecommerceEnv) PS C:\Users\23470\desktop\django>django-admin startproject ecommerce
+C:\Users\23470\desktop\django\ecommerceEnv/Scripts\python.exe: can't open file 'C:\Users\23470\desktop\django\django-admin': [Errno 2] No such file or directory
+(base) (ecommerceEnv) PS C:\Users\23470\desktop\django> django-admin startproject ecommerce
+CommandError: 'C:\Users\23470\desktop\django\ecommerce' already exists
+(base) (ecommerceEnv) PS C:\Users\23470\desktop\django> pip install mysqlclient
+Collecting mysqlclient
+  Downloading mysqlclient-2.1.1-cp39-cp39-win_amd64.whl (178 kB)
+     ---------------------------------------- 178.5/178.5 kB 158.3 kB/s eta 0:00:00
+Installing collected packages: mysqlclient
+Successfully installed mysqlclient-2.1.1
+
+[notice] A new release of pip available: 22.2.2 -> 22.3
+[notice] To update, run: python.exe -m pip install --upgrade pip
+(base) (ecommerceEnv) PS C:\Users\23470\desktop\django>
+(base) (ecommerceEnv) PS C:\Users\23470\desktop\django\ecommerce> python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+November 04, 2022 - 12:43:13
+Django version 4.1.3, using settings 'ecommerce.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+
+WEEK 2
+==============================
+PS C:\Users\23470\desktop> cd django
+PS C:\Users\23470\desktop\django> cd ecommerceenv
+PS C:\Users\23470\desktop\django\ecommerceenv> cd ..
+PS C:\Users\23470\desktop\django> cd ecommerceEnv
+PS C:\Users\23470\desktop\django\ecommerceEnv> Scripts\activate
+(ecommerceEnv) PS C:\Users\23470\desktop\django\ecommerceEnv> code .
+(ecommerceEnv) PS C:\Users\23470\desktop\django\ecommerceEnv> python manage.py migrate
+C:\Users\23470\desktop\django\ecommerceEnv/Scripts\python.exe: can't open file 'C:\Users\23470\desktop\django\ecommerceEnv\manage.py': [Errno 2] No such file or directory
+(ecommerceEnv) PS C:\Users\23470\desktop\django\ecommerceEnv> cd ..
+(ecommerceEnv) PS C:\Users\23470\desktop\django> cd ecommerce
+(ecommerceEnv) PS C:\Users\23470\desktop\django\ecommerce> python manage.py migrate
+System check identified some issues:
+
+WARNINGS:
+?: (mysql.W002) MariaDB Strict Mode is not set for database connection 'default'
+        HINT: MariaDB's Strict Mode fixes many data integrity problems in MariaDB, such as data truncation upon insertion, by escalating warnings into errors. It is strongly recommended you activate it. See: https://docs.djangoproject.com/en/4.1/ref/databases/#mysql-sql-mode
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying sessions.0001_initial... OK
+
+
+
+http://127.0.0.1:8000/accounts/login/
+
+
+TO START SERVER INSIDE THE VIRTUAL ENVIRONMENT
+(base) (ecommerceEnv) PS C:\Users\23470\desktop\django\ecommerce> cd ..
+(base) (ecommerceEnv) PS C:\Users\23470\desktop\django> cd ecommerceEnv
+(base) (ecommerceEnv) PS C:\Users\23470\desktop\django\ecommerceEnv> Scripts\activate
+(base) (ecommerceEnv) PS C:\Users\23470\desktop\django\ecommerceEnv> python manage.py runserver
+C:\Users\23470\desktop\django\ecommerceEnv/Scripts\python.exe: can't open file 'C:\Users\23470\desktop\django\ecommerceEnv\manage.py': [Errno 2] No such file or directory
+(base) (ecommerceEnv) PS C:\Users\23470\desktop\django\ecommerceEnv> cd ..
+(base) (ecommerceEnv) PS C:\Users\23470\desktop\django> cd ecommerce
+(base) (ecommerceEnv) PS C:\Users\23470\desktop\django\ecommerce> python manage.py runserver
+============================================================================================================
+
+TO UPLOAD YOUR AUTH FILE TO MYSQL
+Enter the folder where the manage file is
+Go to command and enter python manage.py migrate
+DOne.
+Check your SQL.
+
+===================================
+
+WEEK 3 DJANGO
+====================
+creating 4 templates inside our registration folder
+
+
+
+FROM MAINPAGE WHILE EDITING DROPDOWN MENU 
+
+{% comment %}<a class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
+                    </a> {% endcomment %}
+
+
+
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+
+(ecommerceEnv) PS C:\Users\23470\desktop\django> cd ecommerce
+(ecommerceEnv) PS C:\Users\23470\desktop\django\ecommerce> cd ecommerce
+(ecommerceEnv) PS C:\Users\23470\desktop\django\ecommerce\ecommerce>django-admin startapp userapp
+
+You'll be the one to create the urls file and the form file inside the app folder you created.
+
+
+
+
+FORM
+PASSWORD_RESET_FORM
+
+<div>
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-md-6 col-12 col-effect-3">
+            <p class="mt-6">
+                Reset Password
+            </p>
+        </div>
+        <input class="bc-white mt-2 ml-2 me-3 loginbutton" type="submit" value="">
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>
+
+PASSWORD_RESET_DONE
+<div>
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-md-6 col-12 col-effect-3">
+            <p class="mt-6">
+
+                An Email has been forwarded to your email provided during sign up
+            </p>
+        </div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>
+
+
+
+PASSWORD RESET SUCCESSFULLY CODE (SECOND OPTION)
+<div>
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-md-6 col-12 col-effect-3">
+            <p class="mt-6">
+
+                Your Password has been reset Successfully
+            </p>
+        </div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>
+=====================================================
+
+DJANGO WEEK 4
+
+
+Talking about table and altering them on the SQL
+To see the models locate it inside your virtual env
+go to lib go to site package and go to django
+go to db and check for models.
+
+create class and profile inside your model
+install Pillow
+and makemigration
+======================================================
+
+
+
+
+
+
+
+
+
+
