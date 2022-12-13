@@ -1,0 +1,110 @@
+project to do
+Hospital
+School
+Aviation
+Portfolio
+
+
+
+REASON FOR WORKING ON  VIRTUAL ENVIRONMENT
+e-commerce
+LIST OF LIBRARIES
+-random 1.0.1
+-numpy 1.0.0
+-pandas library 2.1.1
+-mysqlcline 2.0.1
+
+hospital management
+-numpy
+mysqlcline
+-sklear 2.2.1
+opencv 1.3.2
+open cv depends on numpy
+sklearn depends on numpy and pandas
+
+school management system
+
+==========================================
+Virtual environment is creating different environment for different projects.
+
+Make sure one project,one virtual environment.
+===============================================
+TO CREATE AND ACTIVATE A VIRTUAL ENV
+1 Create a folder you want your virtual env to be install
+
+2
+==============================================
+
+the first thing is called Template to URL to Views
+to Models
+You can go back to Tem from View and you can go to Forms from Views.
+The views and the models are the backend. The views can be reffered to as the brain of our django project.
+
+
+TEMPLATE
+All the html files are reffered to as interface.Where the user interact.
+
+
+URLS
+This Urls contains all the links.
+
+
+
+VIEWS/BRAIN/BACKEND JOBS
+This is the brain of the project.Where all the backend takes place.
+
+
+MODELS/DATABASE
+The models is our database in Django. We do all database related issues in django inside our models.
+
+
+
+FORMS
+Django has its own forms. Not like HTML forms.
+We do all forms related requests inside the FORMS.
+
+DEBUG
+Change it to False after the development stage.
+
+ALLOWED HOST
+This is where you will put your domain name.
+['www.ecommerce.com',
+  'ecommerce.com'
+]
+['127.0.0.1']
+======================
+
+STATIC FILES
+This are the types of files you use to create your project.
+If you are using 
+
+=================================================
+DJANGO WEEK 2
+In my SQL ,permission and users are related and they work together
+When a user sign up,the info goes to User.
+
+An active user is just like a customer.
+Is_staff is just like a normal staff. Have access to the frontend and the admin page. E.g . Someone controlling the stock.
+Super User can control anybody.
+You cannot be a super user without being a staff and being active.
+You can be active but not a staff and not a super user.
+Any user you might be,you must be active before logging in.
+
+CREATE SUPER USER
+(ecommerceEnv) PS C:\Users\23470\desktop\django\ecommerce> python manage.py createsuperuser
+Username (leave blank to use '23470'): admin
+Email address: obam2780@gmail.com
+Password:
+Password (again):
+Superuser created successfully.
+(ecommerceEnv) PS C:\Users\23470\desktop\django\ecommerce>
+
+
+remove the admin path inside your urls to disable to admin page.
+
+
+
+
+
+
+
